@@ -1,0 +1,126 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+
+.container {
+    width: 50rem;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+.top {
+    padding: 2rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: whitesmoke;
+    max-width: 100%;
+    /* border: 2px solid blue; */
+}
+
+.bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.bottom-left {
+    background-color: hsl(179, 62%, 43%);
+    padding: 2rem;
+    border-bottom-left-radius: 10px;
+}
+
+p:not([class="attribution"]):not([class="top-para-one"]):not([class="top-para-two"]) {
+    color: hsl(204, 43%, 93%); 
+}
+
+button {
+    width: 15rem;
+    padding: 1rem;
+    border: none;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    box-shadow: darkgrey 12 23;
+}
+
+.bottom-right {
+    grid-area: bottom-right;
+    background-color: rgba(42, 178, 175, 0.8);
+    padding: 2rem;
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.top-para-one {
+    color: hsl(71, 73%, 54%);
+    font-weight: bolder;
+}
+
+.top-para-two {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.8rem;
+}
+
+.para-sub {
+    font-weight: bolder;
+}
+
+.para-price {
+    font-weight: lighter;
+}
+
+span {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.bottom-right-para-two {
+    line-height: 1.5rem;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    button {
+        width: 12rem;
+        padding: 1rem;
+        border: none;
+        color: white;
+        background-color: hsl(71, 73%, 54%);
+        border-radius: 5px;
+        box-shadow: darkgrey 12 23;
+    }
+}
+
+@media (max-width: 576px) {
+    .bottom-left {
+        border-radius: 0;
+    }
+
+    .bottom-right {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
